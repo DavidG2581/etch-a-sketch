@@ -1,0 +1,38 @@
+body {
+    /* must give height for align-items to work */
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellowgreen;
+    height: 640px;
+    width: 640px;
+}
+
+.gridButton {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-style: solid;
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* use outline so the css size doesnt change */
+    outline:1px solid white;
+}
+
+
+#reset {
+    font-size: x-large;
+    height: 50px;
+    width: auto;
+}

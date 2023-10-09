@@ -1,38 +1,50 @@
-body {
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
     /* must give height for align-items to work */
     height: 100vh;
     background-color: grey;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:15px;
 }
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: yellowgreen;
-    height: 640px;
-    width: 640px;
-}
-
-.gridButton {
-    height: 40px;
-    width: 40px;
-    background-color: red;
-    border-style: solid;
-    border: 5px;
+.left{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 640px;
+    width: 640px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: baseline;
+    background-color: yellowgreen;
+    height: 720px;
+    width: 720px;
+}
+
+.gridButton {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
     /* use outline so the css size doesnt change */
     outline:1px solid white;
 }
 
 
-#reset {
+button {
     font-size: x-large;
-    height: 50px;
-    width: auto;
+    text-shadow: 0 0 13px #b813fa;
+    height: auto;
+    width: auto; 
 }
